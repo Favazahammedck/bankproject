@@ -1,0 +1,49 @@
+<h3 style="color: aliceblue;"></h3>
+<div class="container col-md-12 mt-0">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="text-center">Sign Up</h3>
+                <div class="card-body">
+
+
+                    <form [formGroup]="registerForm" (ngSubmit)="register()">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="accno" formControlName="acno" name="acno"
+                                id="login_accno" required>
+                            <!-- (change)="get_Accno($event)" -->
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="password" formControlName="pswd"
+                                name="pswd" id="login_password" required>
+
+                            <!-- (change)="get_Pass($event)" -->
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="name" formControlName="name" name="name"
+                                id="login_accno" required>
+                            <!-- (change)="get_Accno($event)" -->
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Register" (click)="register()"
+                                class="btn float-right login_btn " style="width:50%">
+                        </div>
+                    </form>
+                </div>
+                <p style="color:white;align-items:baseline;">Already User <a routerLink="">Login</a></p>
+            </div>
+        </div>
+    </div>
+</div>
